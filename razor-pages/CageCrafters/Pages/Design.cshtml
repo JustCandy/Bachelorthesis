@@ -1,0 +1,25 @@
+﻿@page
+@model DesignModel
+@{
+    ViewData["Title"] = "Design Your Cage";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div id="container" class="design-container">
+    <div class="design-preview">
+        <canvas id="design-canvas"></canvas>
+    </div>
+
+    <div class="design-options">
+    </div>
+</div>
+
+
+<style src="/css/design.css"></style>
+
+<!-- Verweise auf die JavaScript-Dateien -->
+<script src="https://cdn.jsdelivr.net/npm/three@0.127.0/build/three.min.js"></script>
+<script src="/js/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three.interaction@0.2.3/build/three.interaction.min.js"></script>
+<script src="/js/design.js"></script>

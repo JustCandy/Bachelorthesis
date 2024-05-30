@@ -1,0 +1,56 @@
+.container-wrapper {
+  display: flex;
+  width: 100vw;
+  overflow: hidden; /* Hinzufügen, um das Menü zu verstecken, wenn es rechts herausragt */
+}
+
+#container {
+  flex: 1;
+  /* Fügen Sie hier Ihren Three.js-Stil hinzu, falls erforderlich */
+  background-color: #f0f0f0;
+}
+
+#menu {
+  font-family: "Calibri";
+  width: 30%;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  position: sticky; /* Hinzufügen, um das Menü zu fixieren */
+  top: 20px; /* Hinzufügen, um den Abstand vom oberen Rand einzustellen */
+  min-width: 200px; /* Hinzufügen, um die minimale Breite des Menüs festzulegen */
+}
+
+/* Panel Options */
+#menu h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#panelOutlines {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+label[for="panelOutlines"] {
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+/* Mode Slide Toggle */
+.mode-toggle-container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.mode-toggle-container span {
+  flex: 1;
+}
+
+.mode-toggle {
+  margin: 0 10px;
+}
